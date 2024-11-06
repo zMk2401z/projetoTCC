@@ -15,6 +15,7 @@ const produtosRoute = require("./src/routes/produtosRoute");
 const noticiasRoute = require("./src/routes/noticiasRoute");
 const pagesRoute = require("./src/routes/pagesRoute");
 const fichaRoute = require("./src/routes/fichaRoute");
+const contatoRoute = require("./src/routes/contatoRoute");
 
 
 const app = express();
@@ -57,6 +58,7 @@ app.use('/logoutAdmin', logoutAdminRoute);
 app.use ('/logout', logoutRoute);
 app.use('/pages', pagesRoute);
 app.use('/ficha', fichaRoute);
+app.use('/contato', contatoRoute);
 
 app.listen(port, async () => {
   const [result] = await database.query("SELECT 1");
