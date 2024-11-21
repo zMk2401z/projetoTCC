@@ -75,29 +75,6 @@
         </div>
     </div>
 
-            <script> document.addEventListener('DOMContentLoaded', () => {
-                    const prev = document.querySelector('.prev');
-                    const next = document.querySelector('.next');
-                    const carouselInner = document.querySelector('.carousel-inner');
-                    let index = 0;
-
-                    function updateCarousel() {
-                        const offset = -index * 100;
-                        carouselInner.style.transform = `translateX(${offset}%)`;
-                    }
-
-                    prev.addEventListener('click', () => {
-                        index = (index > 0) ? index - 1 : 2;
-                        updateCarousel();
-                    });
-
-                    next.addEventListener('click', () => {
-                        index = (index < 2) ? index + 1 : 0;
-                        updateCarousel();
-                    });
-                });
-            </script>
-
             <%- include('components/footer') %>
     </body>
 

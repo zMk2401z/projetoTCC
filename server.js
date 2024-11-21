@@ -16,6 +16,8 @@ const noticiasRoute = require("./src/routes/noticiasRoute");
 const pagesRoute = require("./src/routes/pagesRoute");
 const fichaRoute = require("./src/routes/fichaRoute");
 const contatoRoute = require("./src/routes/contatoRoute");
+const compraRoute = require("./src/routes/compraRoute");
+const poscompraRoute = require("./src/routes/poscompraRoute");
 
 
 const app = express();
@@ -59,6 +61,9 @@ app.use ('/logout', logoutRoute);
 app.use('/pages', pagesRoute);
 app.use('/ficha', fichaRoute);
 app.use('/contato', contatoRoute);
+app.use('/compra', compraRoute);
+app.use('/poscompra', poscompraRoute);
+
 
 app.listen(port, async () => {
   const [result] = await database.query("SELECT 1");

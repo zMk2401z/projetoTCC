@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 *, *::before, *::after{
     padding: 0;
     margin: 0;
@@ -5,7 +7,7 @@
 }
 
 *{
-    font-family: var(--serif);
+    font-family: 'MedievalSharp', serif;
     margin: 0; padding: 0;
 }
 
@@ -918,7 +920,7 @@ menu-hamburger
     width: 10rem;
     height: 100%;
     z-index: 999;
-    background-color: var(--cor-azul-escuro-contraste);
+    background-color: var(--cor-azul-escuro);
   }
   
   a {
@@ -1680,6 +1682,256 @@ transition: width 0.5s ease; /* Animação ao mudar a largura do preenchimento *
             left: 25%;
         }
         
-        
-        
         }
+
+        .main-menu-hamburger ul li {
+            font-size: 25px;
+        }
+
+        .news-slider {
+            position: relative;
+            /* width: 80%;
+             */
+             max-width: 100%;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 50%;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .news-item {
+            min-width: 100%;
+            position: relative;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .news-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .news-text {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .news-text h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .news-text p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .news-text .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .news-text .btn:hover {
+            background: #0056b3;
+        }
+
+        .nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 10;
+            transition: background 0.3s ease;
+        }
+
+        .nav:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .nav.prev {
+            left: 10px;
+        }
+
+        .nav.next {
+            right: 10px;
+        }
+
+        /* Compra */
+
+        
+  
+      .details {
+        flex-grow: 1;
+        color: #fff;
+      }
+  
+      .details h2 {
+        font-size: 2.5rem;
+        color: gold;
+      }
+  
+      .details p {
+        margin-top: 15px;
+        line-height: 1.5;
+      }
+  
+      .details p.price {
+        font-size: 1.8rem;
+        color: gold;
+        font-weight: bold;
+        margin: 20px 0;
+      }
+  
+      .details button {
+        background: gold;
+        border: none;
+        padding: 15px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #000;
+      }
+  
+      .details button:hover {
+        background: darkgoldenrod;
+      }
+  
+      .container2 {
+        max-width: 900px;
+        margin: 40px auto;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 30px;
+        border: 2px solid var(--cor-azul-escuro-contraste);
+        border-radius: 10px;
+        box-shadow: 0 0 20px #000;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+  
+      .image-container img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;
+      }
+      
+      .background-compra {
+        background-color: var(--cor-azul-escuro);
+      }
+
+
+      /* PosCompra */
+      
+
+
+      .container3 {
+        max-width: 800px;
+        margin: 40px auto;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 30px;
+        border: 2px solid var(--cor-azul-escuro-contraste);
+        border-radius: 10px;
+        box-shadow: 0 0 20px #000;
+      }
+  
+      .container3 h2 {
+        text-align: center;
+        color: gold;
+        font-size: 2rem;
+      }
+  
+      .order-summary {
+        margin-top: 20px;
+        background: rgba(30, 30, 30, 0.8);
+        border-radius: 10px;
+        padding: 20px;
+      }
+  
+      .order-summary h3 {
+        margin: 0;
+        color: gold;
+        font-size: 1.5rem;
+        border-bottom: 1px solid gold;
+        padding-bottom: 10px;
+      }
+  
+      .order-item {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+      }
+  
+      .order-item img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        margin-right: 15px;
+      }
+  
+      .order-item div {
+        flex-grow: 1;
+      }
+  
+      .order-item div h4 {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+  
+      .order-item div p {
+        margin: 5px 0;
+      }
+  
+      .confirmation {
+        margin-top: 20px;
+        text-align: center;
+      }
+  
+      .confirmation button {
+        background: gold;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #000;
+      }
+  
+      .confirmation button:hover {
+        background: darkgoldenrod;
+      }
