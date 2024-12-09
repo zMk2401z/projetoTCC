@@ -18,6 +18,8 @@ const fichaRoute = require("./src/routes/fichaRoute");
 const contatoRoute = require("./src/routes/contatoRoute");
 const positionRoute = require("./src/routes/positionRoute");
 const uploadAdminRoute = require("./src/routes/uploadAdminRoute");
+const compraRoute = require("./src/routes/compraRoute");
+const poscompraRoute = require("./src/routes/poscompraRoute");
 
 const app = express();
 const port = process.env.PORTSERVER || 3000;
@@ -75,6 +77,8 @@ app.use("/ficha", fichaRoute);
 app.use("/contato", contatoRoute);
 app.use("/position", positionRoute);
 app.use("/upload", uploadAdminRoute);
+app.use("/compra", compraRoute);
+app.use("/poscompra", poscompraRoute);
 
 app.listen(port, async () => {
   const [result] = await database.query("SELECT 1");
